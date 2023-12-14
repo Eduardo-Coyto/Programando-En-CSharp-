@@ -16,6 +16,13 @@ namespace DecisionesyBucles.Ejercicios
             int resultado = 0;
             
             // Tu código debajo de esta línea
+
+            if ( a > b) {
+                return resultado = a;
+            } else
+            {
+                resultado = b;
+            }
             
             return resultado;
         }

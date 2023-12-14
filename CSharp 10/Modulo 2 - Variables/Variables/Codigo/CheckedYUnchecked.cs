@@ -10,6 +10,7 @@ namespace Variables.Codigo
     {
         public void CodigoDelCurso()
         {
+            // Con el operador checked verifico que la operación se ejecute en un entorno seguro y donde verifica si hay overflow
             checked
             {
                 var maximo = int.MaxValue;

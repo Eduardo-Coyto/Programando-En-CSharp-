@@ -10,8 +10,9 @@ namespace Variables.Codigo
     {
         public void CodigoDelCurso()
         {
-            // Si usamos double o float, no tenemos representaciones suficientemente precisas
-            // de algunos números. Cuando sea necesario, es mejor usar decimal.
+            /* Si usamos double o float, no tenemos representaciones suficientemente precisas
+             de algunos números. Cuando sea necesario, es mejor usar decimal. */
+            /* Float y Double utilizan base 2 para representar los números, mientras que Decimal utiliza base 10 para representarlos. */
             var cantidad1 = 7.1; // double
             var cantidad2 = 3.5; // double
             var resultadoSuma = cantidad1 + cantidad2;

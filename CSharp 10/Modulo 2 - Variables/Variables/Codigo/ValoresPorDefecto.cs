@@ -11,6 +11,7 @@ namespace Variables.Codigo
     {
         public void CodigoDelCurso()
         {
+         // por defecto es el número 0
             int edad = default;
 
             Console.WriteLine("Valor por defecto de int: ");
@@ -18,21 +19,25 @@ namespace Variables.Codigo
 
             edad = 8;
 
+            // por defecto es false
             bool hoyEsDomingo = default;
 
             Console.WriteLine("Valor por defecto de bool: ");
             Console.WriteLine(hoyEsDomingo);
 
+            // por defecto es 0
             decimal precio = default;
 
             Console.WriteLine("Valor por defecto de decimal: ");
             Console.WriteLine(precio);
 
+            // por defecto es 01-Jan-01 12:00:00 AM
             DateTime fecha = default;
 
             Console.WriteLine("Valor por defecto de fecha: ");
             Console.WriteLine(fecha);
 
+            // el valor por defecto del strig es null
             string nombre = null;
 
             Console.WriteLine("Valor por defecto de string: ");

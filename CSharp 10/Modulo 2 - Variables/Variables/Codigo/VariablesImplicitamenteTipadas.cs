@@ -17,7 +17,7 @@ namespace Variables.Codigo
             var hoy = DateTime.Now;
             var float1 = 1.9f;
 
-            // No podemos usar var si no le asignamos un valor a la variable inmediatamente
+            // Importante: No podemos usar var si no le asignamos un valor a la variable inmediatamente
             int edad;
 
             edad = 8;

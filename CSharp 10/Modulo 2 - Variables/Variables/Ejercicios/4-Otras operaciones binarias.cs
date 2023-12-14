@@ -23,7 +23,8 @@ namespace Variables.Ejercicios
     {
         public int Ejercicio(int numero){
             // Tu código debajo de esta línea
-           
+
+            numero = (((numero + 10) * 2) - 3 + 29) / 2;
 
             return numero;
         }

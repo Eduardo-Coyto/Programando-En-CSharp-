@@ -41,6 +41,8 @@ namespace DecisionesyBucles.Codigo
                 case 3:
                     Console.WriteLine("¡Puedes vender tu medalla de bronce en una compraventa!");
                     break;
+                
+                    // en este caso el case 4 y case 5 hacen lo mismo
                 case 4:
                 case 5:
                     Console.WriteLine("Casi casi lo lograste");

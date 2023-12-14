@@ -22,13 +22,16 @@ namespace Variables.Ejercicios
 
     public class EscapandoUnString
     {
-        /* remueve esta línea para descomentar
+        ///* remueve esta línea para descomentar
         public string Ejercicio(){
             // Tu código debajo de esta línea
-            
-            
+
+            string mensaje;
+
+            mensaje = "Este string contiene \\ y también \" pues lo escapamos";
+
             return mensaje;
         }
-        */ //<-- remueve esta línea para descomentar
+        //*/ //<-- remueve esta línea para descomentar
     }
 }

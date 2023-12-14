@@ -12,7 +12,9 @@ namespace DecisionesyBucles.Ejercicios
         {
             int resultado;
 
-            // Tu código debajo de esta línea
+            /* 
+             Tu código debajo de esta línea
+            
             if (a > b)
             {
                 resultado = a;
@@ -21,6 +23,10 @@ namespace DecisionesyBucles.Ejercicios
             {
                 resultado = b;
             }
+            
+            */
+            
+            resultado = a > b ? a : b;
 
             return resultado;
         }

@@ -15,7 +15,8 @@ namespace Variables.Codigo
             var resultadoSuma = cantidad1 + cantidad2;
             var resultadoResta = cantidad1 - cantidad2;
             var resultadoMultiplicacion = cantidad1 * cantidad2;
-            // Aquí hicimos un casteo. Lo veremos más adelante en detalle.
+
+            // Aquí hicimos un casteo (transformar de un tipo de dato a otro) con double. Lo veremos más adelante en detalle.
             var resultadoDivision = (double)cantidad1 / cantidad2;
             var resultadoResiduo = cantidad1 % cantidad2;
 

@@ -16,12 +16,17 @@ namespace Variables.Ejercicios
 
     public class IntroduccionADateTime
     {
-        /* remueve esta línea para descomentar
-        public DateTime Ejercicio(){
+
+        public DateTime Ejercicio()
+        {
             // Tu código debajo de esta línea
+
+            DateTime fecha;
+
+            fecha = new DateTime(2023, 5, 12, 10, 0, 0);
 
             return fecha;
         }
-         */ //<-- remueve esta línea para descomentar
+
     }
 }
