@@ -17,10 +17,25 @@ namespace Variables.Ejercicios
     {
         public int? DeterminarElNumeroMayor(int[] numeros)
         {
-            int? resultado = 0;
-
             // Tu código debajo de esta línea
 
+            int? resultado = 0;
+
+            /* Verifico si el arreglo trae elementos */
+            if (numeros.Length == 0)
+            {
+                return null;
+            }
+
+            /* cargo el primer número como la posible solución y realizo iteración para comprobar si el siguiente numero es mayor */
+            resultado = numeros[0];
+            foreach (int numero in numeros)
+            {
+                if (numero > resultado)
+                {
+                    resultado = numero;
+                }
+            }
 
             return resultado;
         }

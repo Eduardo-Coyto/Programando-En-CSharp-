@@ -16,7 +16,7 @@ namespace MasAcercaDeTiposDeDatos.Codigo
             var dosPrimerasVocales = vocales[dosPrimeros]; // 0, 1
             var tresPrimerasVocales = vocales[..3]; // 0, 1, 2
 
-            var dosUltimasVocales = vocales[^2..]; // ^2, ^1
+            var dosUltimasVocales = vocales[^2..]; // ^2, ^1, o sea, o u
             var dosUltimasVocalesV2 = vocales[3..]; // 3, 4
 
             var tresEnMedio = vocales[1..4]; // 1,2,3

@@ -5,11 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MasAcercaDeTiposDeDatos.Codigo
-{
+{   
+    /* Enums es un valor especial que te permite agrupar un conjunto de constantes numéricas */
     internal class Enums
     {
         public void CodigoDelCurso()
         {
+            // aca puedo variar entre EstatusVenta.PendienteDePago, EstatusVenta.Exitoso, EstatusVenta.Cancelada
             var estatusDeLaVentaDeUnaCamisa = EstatusVenta.Exitoso;
 
             switch (estatusDeLaVentaDeUnaCamisa)

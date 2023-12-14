@@ -21,17 +21,21 @@ namespace MasAcercaDeTiposDeDatos.Codigo
 
             // Ejemplo 2: Otro casteo explícito
 
+            /* No siempre un número entero puede ser parseado a byte debido a que byte va de 0 a 255 e int va de -2mil millones hasta 2mil millones */
+
             byte byte1; // 0 hasta 255
             int int1 = 7; // -2 mil millones hasta 2 mil millones
 
+            /* Es IMPORTANTE usar la función checked para comprobar el parseo en caso de desborde tendriamos un error de System.OverflowException*/
             checked
             {
+                // casteo el entero a byte explícitamente.
                 byte1 = (byte)int1;
             }
 
             Console.WriteLine(byte1);
 
-            // Ejemplo 3: Casteo implícito
+            // Ejemplo 3: Casteo implícito, se da cuando no hay peligro en el casteo. Por ej, 1 byte siempre cabe dentro de un int
 
             byte byte2 = 11;
             int int2;

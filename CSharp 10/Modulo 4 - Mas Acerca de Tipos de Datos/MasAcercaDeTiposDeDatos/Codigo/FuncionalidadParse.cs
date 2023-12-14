@@ -13,6 +13,7 @@ namespace MasAcercaDeTiposDeDatos.Codigo
             // Ejemplo 1: Enteros
             var cantidadString = "5";
 
+            // de string a int
             int cantidad = int.Parse(cantidadString);
 
             cantidad++;
@@ -23,6 +24,7 @@ namespace MasAcercaDeTiposDeDatos.Codigo
 
             var cantidadDecimalString = "4.9";
 
+            // de string a decimal
             var cantidadDecimal = decimal.Parse(cantidadDecimalString);
 
             cantidadDecimal++; // 5.9

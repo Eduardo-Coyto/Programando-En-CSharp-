@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace MasAcercaDeTiposDeDatos
 {
+    /* Declaro el enum
+     
+     Enums es un valor especial que te permite agrupar un conjunto de constantes numéricas
+
+    */
     public enum EstatusVenta
     {
         Exitoso = 1,

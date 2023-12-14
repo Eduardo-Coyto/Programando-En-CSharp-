@@ -12,6 +12,7 @@ namespace MasAcercaDeTiposDeDatos.Codigo
         {
             var nombre = "Felipe";
 
+             /* las funciones ToUpper y ToLower no modifican el valor de la variable original */
             var nombreEnMayúsculas = nombre.ToUpper(); // FELIPE
 
             var nombreEnMinúsculas = nombre.ToLower(); // felipe
@@ -20,6 +21,14 @@ namespace MasAcercaDeTiposDeDatos.Codigo
 
             Console.Write("¿Desea terminar el programa? (y/n) ");
             var entradaUsuario = Console.ReadLine();
+
+            /* 
+             
+            Función Trim es para eliminar los espacios en blanco al principio y al final del string. Además tiene la funcionalidad de eliminar otros string.
+             
+            El elemento "?" en entradaUsuario? verifica que no sea una variable nula 
+             
+            */
 
             if (entradaUsuario?.ToLower().Trim() == "y")
             {
@@ -39,6 +48,8 @@ namespace MasAcercaDeTiposDeDatos.Codigo
             long monto2 = 4;
             long monto3 = 123456789L;
             long monto4 = 1234567890L;
+
+            /* Función PadLeft es para rellenar hasta que tenga una cierta cantidad de caracteres con el valor que quiera */
 
             Console.WriteLine(monto1.ToString().PadLeft(10, '0'));
             Console.WriteLine(monto2.ToString().PadLeft(10, '0'));
