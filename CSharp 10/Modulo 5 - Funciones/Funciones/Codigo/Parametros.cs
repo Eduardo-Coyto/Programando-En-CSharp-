@@ -12,6 +12,15 @@ namespace Funciones.Codigo
         {
             // Ejemplo 1: Una función que recibe un parámetro
 
+            /* 
+            
+            ESTRUCATURA DE LA FUNCIÓN
+            tipo de dato de salida de la función    Nombre de la función   (tipo de dato de entrada de la función)
+            {
+                Bloque de código
+            } 
+            
+            */
             int Duplicar(int valor)
             {
                 return valor * 2;

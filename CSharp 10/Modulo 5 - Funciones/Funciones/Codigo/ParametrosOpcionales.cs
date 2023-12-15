@@ -11,7 +11,13 @@ namespace Funciones.Codigo
         public void CodigoDeLCurso()
         {
             // Ejemplo 1: Ejemplo sencillo
+            /*
 
+            En caso de que no se envíe el parámetro enMayúsculas, por defecto le pongo true
+
+            Los parámetros opcionales deben aparecer después de los parámetros requeridos.
+            
+            */
             void ImprimirEnConsola(string mensaje, bool enMayúsculas = true)
             {
                 if (enMayúsculas)
@@ -26,7 +32,9 @@ namespace Funciones.Codigo
             ImprimirEnConsola(nombre);
 
             // Ejemplo 2: Usando constantes
-
+            /*
+            Es buena práctica declarar como const una variable que va a ser reutilizada en varios lugares.
+            */
             const bool mayúsculas = true;
             void ImprimirEnConsola2(string mensaje, bool enMayúsculas = mayúsculas)
             {
@@ -39,6 +47,9 @@ namespace Funciones.Codigo
             }
 
             // Ejemplo 3: Usando default
+            /*
+            Usar por defecto el valor del tipo de dato.... Por ej, el valor por defecto del bool es false
+            */
 
             void ImprimirEnConsola3(string mensaje, bool enMayúsculas = default)
             {

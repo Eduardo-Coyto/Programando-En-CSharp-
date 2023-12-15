@@ -11,8 +11,11 @@ namespace Funciones.Codigo
         public void CodigoDelCurso()
         {
             // Ejemplo 1: Función void que no recibe parámetros
+            /*
+            Un "Action" es un tipo de dato que representa una función que no retorna nada, por ej una función void
+            */
 
-            Action imprimeMensaje;
+            Action imprimeMensaje; // imprimeMensaje es una variable.
 
             void ImprimirFechaYHora()
             {
@@ -24,9 +27,11 @@ namespace Funciones.Codigo
                 Console.WriteLine("Felipe");
             }
 
+            // con esto obtengo una referencia a la función ImprimirFechaYHora y luego invoco esa referencia
             imprimeMensaje = ImprimirFechaYHora;
             imprimeMensaje();
 
+             // con esto obtengo una referencia a la función ImprimirMiNombre y luego invoco esa referencia
             imprimeMensaje = ImprimirMiNombre;
             imprimeMensaje();
 

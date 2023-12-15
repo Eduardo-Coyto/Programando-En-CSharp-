@@ -11,6 +11,9 @@ namespace Funciones.Codigo
         public void CodigoDelCurso()
         {
             // Ejemplo 1: Función que retorna un string pero que no recibe parámetros
+            /*
+            Func representa una función que retonra un valor 
+            */
 
             Func<string> retornaString;
 
@@ -23,7 +26,7 @@ namespace Funciones.Codigo
             var resultado = retornaString();
             //Console.WriteLine(resultado);
 
-            void Procesar(Func<string> productorDeValor)
+             void Procesar(Func<string> productorDeValor)
             {
                 Console.WriteLine("Línea anterior");
                 var valor = productorDeValor();
@@ -35,6 +38,9 @@ namespace Funciones.Codigo
             //Console.WriteLine();
 
             // Ejemplo 2: Un Func que recibe parámetros
+            /*
+             Func<int, string> el "int" es tipo de dato de entrada a la función, mientras que el "string" es el tipo de datos de salida de la función
+            */
 
             Func<int, string> recibeEnteroRetornaString;
 

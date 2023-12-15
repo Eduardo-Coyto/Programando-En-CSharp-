@@ -11,7 +11,13 @@ namespace Funciones.Codigo
         public void CodigoDelCurso()
         {
             // Ejemplo 1: introducción a out
+            /*
+            Otra forma de pasar un valor como referencia a una función es utilizando "out". La diferencia entre out y ref es que out te permite
+            utilizar varibales que aún no han sido inicializadas. El parámetro out debe ser usado dentro de una función como no inicializado.
+            El parámetro "out" te permite extraer de los valores de la función.
+            */
 
+            // variable cantidad sin inicializar    
             int cantidad;
 
             void DuplicarYTriplicar(int operando, out int resultadoDuplo, out int resultadoTriplo)
@@ -20,6 +26,7 @@ namespace Funciones.Codigo
                 resultadoTriplo = operando * 3;
             }
 
+            // variable sin inicializar
             int resultadoDuplo, resultadoTriplo;
 
             DuplicarYTriplicar(3, out resultadoDuplo, out resultadoTriplo);
@@ -31,6 +38,7 @@ namespace Funciones.Codigo
             int numero;
             string numeroString = "7";
 
+            // con la función TryParse se va a intentar parsear el numeroString y en caso de ser exitoso el parseo se le asigna a la variable out el valor de la variable paseada.
             if (int.TryParse(numeroString, out numero))
             {
                 Console.WriteLine("El número es " + numero);

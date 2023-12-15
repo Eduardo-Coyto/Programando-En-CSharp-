@@ -14,12 +14,20 @@ namespace Funciones.Codigo
             Func<int> func;
             Predicate<int> predicado;
 
+            /*
+            Action, Func y Predicate son ejemplos de Delegados.
+            Un delegado es un puntero que apunta a una función. Son una manera de guardar una referencia a una función en una variable
+            */
+
             bool TryParse2(string valor, out int resultado)
             {
                 return int.TryParse(valor, out resultado);
             }
 
-            //Func<string, out int, bool> tryParseFunc = TryParse2;
+            /*
+            Esto está mal
+            Func<string, out int, bool> tryParseFunc = TryParse2;
+            */
 
             TryParseDelegado miTryParse = TryParse2;
 

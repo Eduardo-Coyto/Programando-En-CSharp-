@@ -26,6 +26,10 @@ namespace Funciones.Codigo
             Console.WriteLine("Promedio1: " + promedio1);
 
             // Ejemplo 2: Pasando un arreglo usando params
+            /*
+            C# ofrece la posibilidada de usar params para evitar usar new int[] cuando se invoca la función, o sea, 
+            paso directamente el contenido del array
+            */
 
             double Promedio2(params int[] numeros)
             {
