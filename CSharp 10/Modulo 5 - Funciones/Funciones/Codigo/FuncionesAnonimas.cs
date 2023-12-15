@@ -35,8 +35,8 @@ namespace Funciones.Codigo
 
             // Ejemplo 3: Función anónima que recibe un parámetro y retorna un valor
 
-            Func<int, int> duplicar = a => 2 * a;
-            var duplicarV2 = (int a) => 2 * a;
+            Func<int, int> duplicar = a => 2 * a; //queda implicito que "a" es int
+            var duplicarV2 = (int a) => 2 * a; //acá no tienen cómo saber que a es int por lo tanto la variable "a" debe tener el tipo de dato
 
             // Ejemplo 4: Función anónima que reciba 2 parámetros y retorna un valor
 

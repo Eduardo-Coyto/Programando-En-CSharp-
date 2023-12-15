@@ -25,7 +25,7 @@ namespace Funciones.Codigo
             }
 
             /*
-            Esto está mal
+            Esto está mal Func no acepta el out
             Func<string, out int, bool> tryParseFunc = TryParse2;
             */
 

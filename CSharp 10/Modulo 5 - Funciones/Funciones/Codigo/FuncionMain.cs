@@ -8,7 +8,11 @@ namespace Funciones.Codigo
 {
     internal class FuncionMain
     {
-        public int CodigoDelCurso(string[] args)
+
+        /*
+        La función Main es el punto de entrada a nuestro software y es la función que se va a correr al compliar el mismo.
+        */
+        public int CodigoDelCurso(string[] args) // el argumento args trae la cantidad de elementos de la consola
         {
             Console.WriteLine($"Recibiendo {args.Length} argumentos de la consola");
 
