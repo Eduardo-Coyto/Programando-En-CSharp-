@@ -8,6 +8,7 @@ namespace Clases.Codigo
 {
     internal class TiposAnonimos
     {
+        /* Tipos anónimos son clases sin nombre y son inmutables. */
 
         internal class Carro
         {
@@ -89,7 +90,11 @@ namespace Clases.Codigo
 
             Console.WriteLine("Carro anonimo: " + carroAnonimo);
 
-            // Ejemplo 3: mutación no destructiva
+            /* 
+            Ejemplo 3: mutación no destructiva 
+            
+            Podmeos usar la clase persona y mutarla con "with" y la Edad cambia
+            */
 
             var personaMutada = persona with { Edad = 100, Apellido = "Gonzalez" };
 

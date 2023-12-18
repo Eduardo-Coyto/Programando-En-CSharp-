@@ -10,6 +10,10 @@ namespace Clases.Codigo
     {
         internal class ResultadoDT
         {
+            /* 
+            Una forma de crear una propiedad de forma rápida es colocar prop + 2 veces tabulador 
+            Modificadores de accesos, internal public....
+            */
             internal int Valor { get; set; }
             public int Duplo { get; set; }
             public int Triplo { get; set; }

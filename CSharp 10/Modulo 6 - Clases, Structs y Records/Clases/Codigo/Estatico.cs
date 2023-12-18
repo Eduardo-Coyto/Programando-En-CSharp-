@@ -8,6 +8,13 @@ namespace Clases.Codigo
 {
     internal class Estatico
     {
+        /*
+        Para tener miembros independientemente de instanciar una clase, usamos miembros estaticos.
+        Un miembro estático de una clase o conocido como miembro de clase, es alquel miembro que puede ser usado sin necesidad de la instancia de una clase. 
+        
+        No puedo acceder a un miembro de instancia desde un método estático
+        
+        */
         internal class Carro
         {
             internal Carro() : this("marca por defecto")
@@ -27,6 +34,7 @@ namespace Clases.Codigo
                 Acelerar(1);
             }
 
+            // usamos static para definir ConteoInstancias como estático.
             public static int ConteoInstancias { get; set; }
 
             // Por convención, los campos empiezan con guión bajo

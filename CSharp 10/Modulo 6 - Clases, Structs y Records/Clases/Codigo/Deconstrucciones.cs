@@ -8,12 +8,16 @@ namespace Clases.Codigo
 {
     internal class Deconstrucciones
     {
+        /*
+        Si se quiere pasar las propiedades de una instancia de una clase a una variable se puede utilizar un desconstructor 
+        */
         internal class ResultadoDT
         {
             internal int Valor { get; set; }
             public int Duplo { get; set; }
             public int Triplo { get; set; }
 
+            /* Realizo la función Desconstruct */
             public void Deconstruct(out int valor, out int duplo, out int triplo)
             {
                 valor = Valor;
@@ -46,7 +50,7 @@ namespace Clases.Codigo
             //var duplo = resultadoDT.Duplo;
             //var triplo = resultadoDT.Triplo;
 
-            // Ejemplo 1: Explícita
+            // Ejemplo 1: Utilizo Desconstruct Explícitamente
 
             //int valor, duplo, triplo;
             //resultadoDT.Deconstruct(out valor, out duplo, out triplo);

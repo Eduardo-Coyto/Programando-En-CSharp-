@@ -10,7 +10,21 @@ namespace Clases.Codigo
     {
         internal class Carro
         {
+            /*
+            Constructor:
 
+            Por defecto las clases tienen un constructor sin parametros el cual nos permiten instanciar la clase que este lista para ser utilizada
+            Los constructors no tienen un tipo de dato de salida, no estan supuestos a devolver ningun valor
+            
+            IMPORTANTE
+            Su nombre es el mismo nombre que de la clase
+
+            -> internal class Carro    nombre de la clase
+            ->  internal Carro()       nombre del constructor 
+
+            Puedo instanciar un constructor dentro de otro constructor a través del método this().... internal Carro() : this("marca por defecto")
+
+            */
             internal Carro() : this("marca por defecto")
             {
                 Console.WriteLine("Instanciando un carro");
@@ -64,6 +78,10 @@ namespace Clases.Codigo
     
         public void CodigoDelCurso()
         {
+            /* 
+            Con new Carro() estamos invocando un tipo especial de función llamado constructor 
+            Los constructores son aquellas funciones que se ejecutan al momento de instanciar una clase 
+            */
             var carro1 = new Carro("Toyota");
             Console.WriteLine(carro1.Marca);
 

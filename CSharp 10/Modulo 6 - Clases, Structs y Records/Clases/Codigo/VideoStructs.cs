@@ -9,6 +9,10 @@ namespace Clases.Codigo
     internal class VideoStructs
     {
         internal class Carro
+        /*
+        Las clases nos permiten tener data y comportamiento en un mismo lugar.
+        Importante de destacar que las clases representan tipos de referencia
+        */
         {
             internal Carro() : this("marca por defecto")
             {
@@ -65,13 +69,19 @@ namespace Clases.Codigo
         }
 
         internal struct Punto
-        {
+        /*
+        "struc" nos permite tener data y referencia en un mismo lugar, solo que la instancia de un struc será un "tipo de valor" y por lo tanto no le puedo asignar un valor null
+        los struc tienen un constructor sin parámetros aún si no lo ponemos  
+        */
+        {   
+            /* con el shortcut ctor creo un constructor*/
             public Punto(int x, int y)
             {
                 X = x;
                 Y = y;
             }
 
+            // esto es útil para obtener propiedades inmutables
             public int X { get; }
             public int Y { get; }
             public double Distancia(Punto b) => Math.Sqrt(Math.Pow(b.X - X, 2) + Math.Pow(b.Y - Y, 2));

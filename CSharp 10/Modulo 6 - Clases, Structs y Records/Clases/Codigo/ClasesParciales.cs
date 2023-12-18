@@ -20,6 +20,12 @@ namespace Clases.Codigo
             }
         }
 
+        /*
+        Podemos utilizar clases parciales para tener los miembros de una clase en distintos archivos.
+        Para poder utilizar las clases con distintos namespace se debe utilizando "partial". Requisito estar en el mismo namespace
+
+        De esta forma puedo usar las propiedades de cada una de las clases en un mismo procedimiento.
+        */
         internal partial class Calculadora
         {
             public double CalcularPi()
